@@ -1,0 +1,150 @@
+** start of undefined **
+
+<!DOCTYPE html>
+  <!-- Building a Mental Health Survey Form with HTML and CSS -->
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <div class='header'>
+    <header>
+      <div class='logo'>
+      </div>
+      <h1 id='title'>Mental Health Survey</h1>
+      <p id='description'><em>Please Fill Out The Following To The Best Of Your Ability</em></p>
+    </header>
+  </div>
+
+  <body>
+    <form id='survey-form'>
+      <div class='container'>
+       <label for='name' id="name-label" >What is your Name?</label> 
+       <input class="form-control" id='name' type='text' placeholder="Enter your name" required />
+      </div>
+      <div class='container'>
+       <label for='email' id="email-label">What is your Email Address?</label>
+       <input class="form-control" id='email' type='email' placeholder="Enter your Email" required />
+      </div>
+      <div class='container'>
+       <label for='number' id="number-label">How old are you?</label>
+       <input class="form-control" id='number' type='number' min=0 max=120 placeholder="Age" required />
+      </div>
+
+      <div class='dropdown'>
+        <label id="dropdown-label">How did hear about us?</label>
+        <select class="form-control" id="dropdown">
+          <option value="0">Select The Following</option>
+          <option value="1">Online Web Source</option>
+          <option value="2">Refferal</option>
+          <option value="3">Ad</option>
+          <option value="4">Other</option>
+        </select>
+      </div>
+
+      <p id='questions'>These questions below ask about your feelings, thoughts, and concerns in the past few weeks.</p> 
+      <div class='radio'>
+        <fieldset> 
+          <label>How often did you feel confused, anxious or stressed?</label>
+        </fieldset>
+        <label><input id='survey-form' type="radio" value="None" name="Stress"/>None At All</label> 
+        <label><input id='survey-form' type="radio" value="NotSoOften" name="Stress"/>Not So Often</label> 
+        <label><input id='survey-form' type="radio" value="Often" name="Stress"/>Often</label>
+        <label><input id='survey-form' type="radio" value="VeryOften" name="Stress"/>Very Often</label>
+        <fieldset> 
+        <label>How often did you feel tired or felt overwhelmed?</label>
+        </fieldset>
+        <label><input id='survey-form' type="radio" value="None" name="overwhelmed"/>None At All</label> 
+        <label><input id='survey-form' type="radio" value="NotSoOften" name="overwhelmed"/>Not So Often</label> 
+        <label><input id='survey-form' type="radio" value="Often" name="overwhelmed"/>Often</label>
+        <label><input id='survey-form' type="radio" value="VeryOften" name="overwhelmed"/>Very Often</label>
+        <fieldset> 
+        <label>How often did you talk about your issues and feeling to someone?
+        </label>
+        </fieldset>
+        <label><input id='survey-form' type="radio" value="None" name="talk" />None At All</label> 
+        <label><input id='survey-form' type="radio" value="NotSoOften"  name="talk"/>Not So Often</label> 
+        <label><input id='survey-form' type="radio" value="Often"  name="talk" />Often</label>
+        <label><input id='survey-form' type="radio" value="VeryOften"  name="talk" />Very Often</label>
+        <fieldset> 
+        <label>How often do you seek help for stress and/or other health concerns?</label>
+        </fieldset>
+        <label><input id='survey-form' type="radio" value="None" name="seek"/>None At All</label> 
+        <label><input id='survey-form' type="radio" value="NotSoOften" name="seek"/>Not So Often</label>  
+        <label><input id='survey-form' type="radio" value="Often" name="seek"/>Often</label>
+        <label><input id='survey-form' type="radio" value="VeryOften" name="seek"/>Very Often</label>
+      </div>
+      
+      <div class='checkbox'>
+        <fieldset> 
+          <label>Check all the symptoms you have felt in the past week</label>
+          <label><input id='survey-form' type="checkbox" value="Check" name="Check"/>Anxiety</label> 
+          <label><input id='survey-form' type="checkbox" value="Check" name="Check"/>Depression</label>  
+          <label><input id='survey-form' type="checkbox" value="Check" name="Check"/>Mood Changes</label>
+          <label><input id='survey-form' type="checkbox" value="Check" name="Check"/>Confusion/Lack of Concentration </label> 
+        </fieldset>
+      <div class='textarea'>
+        <label>Anything else has  been concerning you in the past weeks?</label> 
+        <textarea id='survey-form' value="Check" name="comment" placeholder = "Thoughts, Feelings, Concerns..."></textarea>
+      </div>
+      <div class='submit'>
+        <button id="submit" type='submit' value = 'submit'>Submit</button>
+      </div>
+    </form>
+  </body>
+  <footer>
+    <div class='contacts'>
+      <a class="footer-link" href="https://www.freecodecamp.org/eucalyptus2329" target="_blank">
+        <span class="icon"><i class="fab fa-free-code-camp fa-2x"></i></span>
+      </a>
+    </div>
+    <div class="webmaster">
+      <p>&copy 2022 Eulix Chiu</a></p>
+    </div>
+  </footer>
+</html>  
+
+** end of undefined **
+
+** start of undefined **
+
+header {
+  text-align:center;
+
+}
+#submit {
+  padding:10px;
+}
+.submit{
+  text-align:center;
+}
+
+.body {
+      background-image:#E9F3ED;
+}
+
+body{
+  margin:50px;
+  padding:10px;
+  border:solid;  
+  border-radius:.50em;  background-image:linear-gradient(rgb(155, 229, 170,0),rgb(155, 229, 170,1));
+}
+form-control {
+  display: block;
+  width: 100;
+  height: 2.375rem;
+}
+
+textarea {
+ margin: 10px 0 0 0;
+ width: 100%;
+ min-height: 2em;
+}
+footer{
+  text-align:center;
+}
+
+** end of undefined **
+
